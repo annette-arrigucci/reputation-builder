@@ -82,7 +82,7 @@ var getUnanswered = function(tags) {
 	};
 	
 	$.ajax({
-		url: "http://api.stackexchange.com/2.2/questions/unanswered",
+		url: "https://api.stackexchange.com/2.2/questions/unanswered",
 		data: request,
 		dataType: "jsonp",//use jsonp to avoid cross origin issues
 		type: "GET",
@@ -114,7 +114,7 @@ var getAnswerers = function(answerers) {
 	};
 	
 	$.ajax({
-		url: "http://api.stackexchange.com/2.2/tags/" + request.tag + "/top-answerers/" + request.period + 
+		url: "https://api.stackexchange.com/2.2/tags/" + request.tag + "/top-answerers/" + request.period + 
 	"?site=" + request.site,
 		/*data: request,*/
 		dataType: "jsonp",//use jsonp to avoid cross origin issues
